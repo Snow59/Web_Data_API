@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  mongo:
+    container_name: demo-mongo
+    restart: on-failure
+    image: mongo
+    volumes:
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro  # Montage du fichier d'initialisation de la base de données
+    environment:
+      MONGO_INITDB_DATABASE: monstre_db  # Nom de la base de données à créer
+
+  api-monstre:
+    build:
+      context: .
+      dockerfile: DockerfileMonstre
+    container_name: mon_conteneur_api_monstre
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongo
+    networks:
+      - mynetwork
+
+  api-invocation:
+    build:
+      context: .
+      dockerfile: DockerfileInvocation
+    container_name: mon_conteneur_api_invocation
+    ports:
+      - "8081:8080"
+    depends_on:
+      - api-monstre
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge

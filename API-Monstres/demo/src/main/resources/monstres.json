@@ -1,0 +1,254 @@
+[
+  {
+    "_id": 1,
+    "name": "Annie",
+    "element": "fire",
+    "hp": 1200,
+    "atk": 450,
+    "def": 300,
+    "vit": 85,
+    "skills": [
+      {
+        "num": 1,
+        "dmg": 125,
+        "ratio": {
+          "stat": "atk",
+          "percent": 25
+        },
+        "cooldown": 0,
+        "lvlMax": 5
+      },
+      {
+        "num": 2,
+        "dmg": 250,
+        "ratio": {
+          "stat": "atk",
+          "percent": 27.5
+        },
+        "cooldown": 2,
+        "lvlMax": 7
+      },
+      {
+        "num": 3,
+        "dmg": 425,
+        "ratio": {
+          "stat": "atk",
+          "percent": 40
+        },
+        "cooldown": 5,
+        "lvlMax": 5
+      }
+    ],
+    "lootRate": 0.1666666667
+  },
+  {
+    "_id": 2,
+    "name": "Janna",
+    "element": "wind",
+    "hp": 1500,
+    "atk": 200,
+    "def": 450,
+    "vit": 80,
+    "skills": [
+      {
+        "num": 1,
+        "dmg": 200,
+        "ratio": {
+          "stat": "def",
+          "percent": 10
+        },
+        "cooldown": 0,
+        "lvlMax": 4
+      },
+      {
+        "num": 2,
+        "dmg": 315,
+        "ratio": {
+          "stat": "def",
+          "percent": 17.5
+        },
+        "cooldown": 2,
+        "lvlMax": 5
+      },
+      {
+        "num": 3,
+        "dmg": 525,
+        "ratio": {
+          "stat": "def",
+          "percent": 20
+        },
+        "cooldown": 6,
+        "lvlMax": 7
+      }
+    ],
+    "lootRate": 0.1966666667
+  },
+  {
+    "_id": 3,
+    "name": "Nami",
+    "element": "water",
+    "hp": 2500,
+    "atk": 150,
+    "def": 200,
+    "vit": 70,
+    "skills": [
+      {
+        "num": 1,
+        "dmg": 150,
+        "ratio": {
+          "stat": "hp",
+          "percent": 5
+        },
+        "cooldown": 0,
+        "lvlMax": 7
+      },
+      {
+        "num": 2,
+        "dmg": 350,
+        "ratio": {
+          "stat": "hp",
+          "percent": 7
+        },
+        "cooldown": 2,
+        "lvlMax": 4
+      },
+      {
+        "num": 3,
+        "dmg": 250,
+        "ratio": {
+          "stat": "atk",
+          "percent": 12
+        },
+        "cooldown": 5,
+        "lvlMax": 5
+      }
+    ],
+    "lootRate": 0.1366666667
+  },
+  {
+    "_id": 4,
+    "name": "Fizz",
+    "element": "water",
+    "hp": 1200,
+    "atk": 550,
+    "def": 350,
+    "vit": 80,
+    "skills": [
+      {
+        "num": 1,
+        "dmg": 150,
+        "ratio": {
+          "stat": "atk",
+          "percent": 27.5
+        },
+        "cooldown": 0,
+        "lvlMax": 6
+      },
+      {
+        "num": 2,
+        "dmg": 285,
+        "ratio": {
+          "stat": "atk",
+          "percent": 27.5
+        },
+        "cooldown": 2,
+        "lvlMax": 9
+      },
+      {
+        "num": 3,
+        "dmg": 550,
+        "ratio": {
+          "stat": "atk",
+          "percent": 60
+        },
+        "cooldown": 4,
+        "lvlMax": 4
+      }
+    ],
+    "lootRate": 0.1
+  },
+  {
+    "_id": 5,
+    "name": "Garen",
+    "element": "earth",
+    "hp": 2000,
+    "atk": 400,
+    "def": 500,
+    "vit": 70,
+    "skills": [
+      {
+        "num": 1,
+        "dmg": 150,
+        "ratio": {
+          "stat": "atk",
+          "percent": 20
+        },
+        "cooldown": 0,
+        "lvlMax": 5
+      },
+      {
+        "num": 2,
+        "dmg": 300,
+        "ratio": {
+          "stat": "atk",
+          "percent": 25
+        },
+        "cooldown": 2,
+        "lvlMax": 6
+      },
+      {
+        "num": 3,
+        "dmg": 450,
+        "ratio": {
+          "stat": "atk",
+          "percent": 35
+        },
+        "cooldown": 4,
+        "lvlMax": 5
+      }
+    ],
+    "lootRate": 0.2666666667
+  },
+  {
+    "_id": 6,
+    "name": "Lux",
+    "element": "light",
+    "hp": 1100,
+    "atk": 300,
+    "def": 250,
+    "vit": 90,
+    "skills": [
+      {
+        "num": 1,
+        "dmg": 120,
+        "ratio": {
+          "stat": "atk",
+          "percent": 20
+        },
+        "cooldown": 0,
+        "lvlMax": 5
+      },
+      {
+        "num": 2,
+        "dmg": 200,
+        "ratio": {
+          "stat": "atk",
+          "percent": 25
+        },
+        "cooldown": 2,
+        "lvlMax": 7
+      },
+      {
+        "num": 3,
+        "dmg": 320,
+        "ratio": {
+          "stat": "atk",
+          "percent": 30
+        },
+        "cooldown": 5,
+        "lvlMax": 6
+      }
+    ],
+    "lootRate": 0.1333333333
+  }
+]
