@@ -1,1 +1,2 @@
-# demomongospring
+Executer la commande <docker-compose up --build> qui va initialiser la base de donné monstre_db et dockeriser l'application en créant une image pour l'api invocation, l'api monstre et la base de données.
+Malheureusement un soucis que je n'ai pas réussi à résoudre, l'application a des difficultés à se connecter à la base de données quand elle n'est pas lancé en local, j'ai donc essayé plusieurs choses dans le application properties et le dockercompose dont un bridge mais je finis toujours sur la même erreur.
