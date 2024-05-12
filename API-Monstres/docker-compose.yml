@@ -6,9 +6,9 @@ services:
     restart: on-failure
     image: mongo
     volumes:
-      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro  # Montage du fichier d'initialisation de la base de données
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
     environment:
-      MONGO_INITDB_DATABASE: monstre_db  # Nom de la base de données à créer
+      MONGO_INITDB_DATABASE: monstre_db
 
   api-monstre:
     build:
