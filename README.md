@@ -12,7 +12,7 @@ Voila la ligne de commande pour demarrer un docker avec un volume sur un port sp
 docker run -d -p 27017:27017 -v mongodb_hamza_data:/data/db --name nom_personnalisé mongo
 
 ############################
-Demarrage Api_auth:
+Demarrage Api_auth:  #############
 
 Etape 1 : build l'image docker de l'api , lancer cette commande à la racine du projet :  docker build -t api_python .
 
@@ -38,6 +38,8 @@ On lance en premier la " create_account() " qui  va créé et ajouté un compte 
 Ensuite "login() " et normalement un token est retourné dans la console.
 
 On récupére ce token et on le colle dans le headers de la fonction " checktoken() "  et on lance cette fonction , l'api retournera que le token est valide avec un http_status en 200. 
+
+###########################################
 
 
 
