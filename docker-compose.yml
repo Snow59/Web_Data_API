@@ -20,3 +20,4 @@ services:
 volumes:
   mongodb_hamza_data:
     external: true
+
