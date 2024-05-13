@@ -14,8 +14,6 @@ services:
     image: mongo:latest
     ports:
       - "27017:27017"
-    volumes:
-      - mongodb_hamza_data:/data/db
 
 volumes:
   mongodb_hamza_data:
