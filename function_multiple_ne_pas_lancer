@@ -87,41 +87,6 @@ def addjson():
 
     print("Les données ont été insérées dans MongoDB.")
 
-def get_by_id():
-        # db_name = request.args.get('db')
-        # collection_name = request.args.get('collection')
-        doc_id = request.args.get('id')
-
-        db = client['Hamza']
-        collection = db['pal']
-
-        # Convertir l'ID de String à ObjectId pour la recherche
-        try:
-            document = collection.find_one({'_id': ObjectId(doc_id)})
-        except Exception as e:
-            return jsonify({"message": "Invalid ID format", "error": str(e)}), 400
-
-        if document:
-            # ObjectId n'est pas sérialisable en JSON, supprimez-le ou convertissez-le en string
-            document['_id'] = str(document['_id'])
-            return jsonify(document)
-        else:
-            return jsonify({"message": "Document not found"}), 404
-
-
-
-
-def test2():
-    import requests
-
-    params = {
-        'db': 'Hamza',
-        'collection': 'pal',
-        'id': '2',
-    }
-
-    response = requests.get('http://127.0.0.1:2000/api/GetById', params=params)
-    print(response.json())
 
 
 def affichage():
@@ -173,16 +138,17 @@ def create_account():
 def checktoken():
 
     headers = {
-        'Authorization': 'Bearer 4fbcb1b639a9bd6c4929ebb4d54b82bdfc95852ca04e192453a7ccd66f128cd6',
+        'Authorization': 'Bearer Mettre_ici_le_token_que_login_retourne_dans_la_console',
     }
 
 
     response = requests.get('http://localhost:8000/check_token', headers=headers)
-    print(response.json())
+    print(response.content)
+    print(response.status_code)
 
 
 create_account()
-login()
+#login()
 #affichage()
 #addjson()
 #checktoken()
